@@ -4,9 +4,6 @@
 
 Usage is very simple: `gh update-branch [<number>]`
 
-Additional features might be added in the future.
+This extension depends on the `/repo/{owner}/{repo}/pulls/{number}/update-branch` API:
 
-### 🚨 NOTE 🚨
-
-This extension depends on the
-`/repo/{owner}/{repo}/pulls/{number}/update-branch` API.
+https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#update-a-pull-request-branch
