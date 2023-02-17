@@ -1,9 +1,20 @@
 # Overview
 
-`gh-update-branch` is a GitHub CLI extension that can ping the `update-branch` API.
+GitHub CLI extension to:
 
-Usage is very simple: `gh update-branch [<number>]`
+> Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
 
-This extension depends on the `/repo/{owner}/{repo}/pulls/{number}/update-branch` API:
+Usage:
 
-https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#update-a-pull-request-branch
+```bash
+# Install it
+gh extension install dentarg/gh-update-branch
+
+# Update it
+gh extension upgrade dentarg/gh-update-branch
+
+# Use it in your repo
+gh update-branch <number>
+```
+
+This extension uses on the [`/repo/{owner}/{repo}/pulls/{number}/update-branch` API endpoint](https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#update-a-pull-request-branch).
